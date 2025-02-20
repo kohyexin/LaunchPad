@@ -42,7 +42,7 @@ export const GradientContainer = ({
         {
           "--top": "rgba(97, 106, 115, .12)",
           "--bottom": "transparent",
-          "--conic-size": "600px",
+          "--conic-size": "300px", //was 600px
         } as CSSProperties
       }
       className={cn("relative z-20", className)}

@@ -42,7 +42,7 @@ export const Brands = ({ heading, sub_heading, logos }: { heading: string, sub_h
         {sub_heading}
       </Subheading>
 
-      <div className="flex gap-10 flex-wrap justify-center md:gap-40 relative h-full w-full mt-20">
+      <div className="flex gap-1 flex-wrap justify-center md:gap-4 relative h-full w-full mt-10">
         <AnimatePresence
           mode="popLayout"
         >

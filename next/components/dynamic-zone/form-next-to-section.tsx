@@ -18,21 +18,21 @@ export function FormNextToSection({ heading, sub_heading, form, section, social_
   const socials = [
     {
       title: "twitter",
-      href: "https://twitter.com/strapijs",
+      href: "https://twitter.com/star-saas",
       icon: (
         <IconBrandX className="h-5 w-5 text-muted  hover:text-neutral-100" />
       ),
     },
     {
       title: "github",
-      href: "https://github.com/strapi",
+      href: "https://github.com/star-saas",
       icon: (
         <IconBrandGithub className="h-5 w-5 text-muted  hover:text-neutral-100" />
       ),
     },
     {
       title: "linkedin",
-      href: "https://linkedin.com/strapi",
+      href: "https://linkedin.com/star-saas",
       icon: (
         <IconBrandLinkedin className="h-5 w-5 text-muted  hover:text-neutral-100" />
       ),

@@ -70,7 +70,7 @@ export const DesktopNavbar = ({ leftNavbarItems, rightNavbarItems, logo, locale 
         <Logo locale={locale} image={logo?.image} />
         <div className="flex items-center gap-1.5">
           {leftNavbarItems.map((item) => (
-            <NavbarItem href={`/${locale}${item.URL}` as never} key={item.text} target={item.target}>
+            <NavbarItem href={`${item.URL.startsWith('http') ? '' : `/${locale}`}${item.URL}` as never} key={item.text} target={item.target}>
               {item.text}
             </NavbarItem>
           ))}
@@ -80,7 +80,7 @@ export const DesktopNavbar = ({ leftNavbarItems, rightNavbarItems, logo, locale 
         <LocaleSwitcher currentLocale={locale} />
 
         {rightNavbarItems.map((item, index) => (
-          <Button key={item.text} variant={index === rightNavbarItems.length - 1 ? 'primary' : 'simple'} as={Link} href={`/${locale}${item.URL}`}>
+          <Button key={item.text} variant={index === rightNavbarItems.length - 1 ? 'primary' : 'simple'} as={Link} href={`${item.URL.startsWith('http') ? '' : `/${locale}`}${item.URL}`}>
             {item.text}
           </Button>
         ))}
@@ -88,3 +88,17 @@ export const DesktopNavbar = ({ leftNavbarItems, rightNavbarItems, logo, locale 
     </motion.div>
   );
 };
+
+const LinkSection = ({ links, locale }: { links: { text: string; URL: never | string }[], locale: string }) => (
+  <div className="flex justify-center space-y-4 flex-col mt-4">
+    {links.map((link) => (
+      <Link
+        key={link.text}
+        className="transition-colors hover:text-neutral-400 text-muted text-xs sm:text-sm"
+        href={`${link.URL.startsWith('http') ? '' : `/${locale}`}${link.URL}`}
+      >
+        {link.text}
+      </Link>
+    ))}
+  </div>
+);

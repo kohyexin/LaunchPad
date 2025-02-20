@@ -698,6 +698,10 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
         'dynamic-zone.cta',
         'dynamic-zone.form-next-to-section',
         'dynamic-zone.faq',
+        'dynamic-zone.hover-effects',
+        'dynamic-zone.stats',
+        'dynamic-zone.marquee',
+        'dynamic-zone.hero-image',
       ]
     > &
       Schema.Attribute.SetPluginOptions<{

@@ -18,10 +18,13 @@ export const Logo = ({ image, locale }: { image?: Image, locale?: string }) => {
           alt={image.alternativeText}
           width={200}
           height={200}
-          className="h-10 w-10 rounded-xl mr-2"
-        />
+          //className="h-10 w-10 rounded-xl mr-2"
+          className="mr-2"
+          />
 
-        <span className="text-white font-bold">LaunchPad</span>
+        {/* commented to not show Home
+        <span className="text-white font-bold">Home</span>
+        */}
       </Link>
     );
   }

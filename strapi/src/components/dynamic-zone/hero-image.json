@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_dynamic_zone_hero_images",
+  "info": {
+    "displayName": "hero_image",
+    "icon": "puzzle"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    }
+  }
+}

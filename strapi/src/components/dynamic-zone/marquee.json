@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_dynamic_zone_marquees",
+  "info": {
+    "displayName": "marquee",
+    "icon": "link"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "URL": {
+      "type": "string"
+    }
+  }
+}

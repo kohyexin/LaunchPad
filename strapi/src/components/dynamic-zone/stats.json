@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_dynamic_zone_stats",
+  "info": {
+    "displayName": "stats",
+    "icon": "hashtag"
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "string"
+    },
+    "value": {
+      "type": "biginteger"
+    },
+    "subtext": {
+      "type": "string"
+    }
+  }
+}

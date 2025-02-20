@@ -155,6 +155,34 @@ export interface DynamicZoneHero extends Struct.ComponentSchema {
   };
 }
 
+export interface DynamicZoneHeroImage extends Struct.ComponentSchema {
+  collectionName: 'components_dynamic_zone_hero_images';
+  info: {
+    displayName: 'hero_image';
+    icon: 'puzzle';
+  };
+  attributes: {
+    heading: Schema.Attribute.String;
+  };
+}
+
+export interface DynamicZoneHoverEffects extends Struct.ComponentSchema {
+  collectionName: 'components_dynamic_zone_hover_effects';
+  info: {
+    description: '';
+    displayName: 'Hover_Effects';
+    icon: 'apps';
+  };
+  attributes: {
+    Heading: Schema.Attribute.String;
+    Icon: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    Subheading: Schema.Attribute.Text;
+  };
+}
+
 export interface DynamicZoneHowItWorks extends Struct.ComponentSchema {
   collectionName: 'components_dynamic_zone_how_it_works';
   info: {
@@ -180,6 +208,18 @@ export interface DynamicZoneLaunches extends Struct.ComponentSchema {
     heading: Schema.Attribute.String;
     launches: Schema.Attribute.Component<'shared.launches', true>;
     sub_heading: Schema.Attribute.String;
+  };
+}
+
+export interface DynamicZoneMarquee extends Struct.ComponentSchema {
+  collectionName: 'components_dynamic_zone_marquees';
+  info: {
+    displayName: 'marquee';
+    icon: 'link';
+  };
+  attributes: {
+    name: Schema.Attribute.String;
+    URL: Schema.Attribute.String;
   };
 }
 
@@ -221,6 +261,19 @@ export interface DynamicZoneRelatedProducts extends Struct.ComponentSchema {
     heading: Schema.Attribute.String;
     products: Schema.Attribute.Relation<'oneToMany', 'api::product.product'>;
     sub_heading: Schema.Attribute.String;
+  };
+}
+
+export interface DynamicZoneStats extends Struct.ComponentSchema {
+  collectionName: 'components_dynamic_zone_stats';
+  info: {
+    displayName: 'stats';
+    icon: 'hashtag';
+  };
+  attributes: {
+    description: Schema.Attribute.String;
+    subtext: Schema.Attribute.String;
+    value: Schema.Attribute.BigInteger;
   };
 }
 
@@ -518,11 +571,15 @@ declare module '@strapi/strapi' {
       'dynamic-zone.features': DynamicZoneFeatures;
       'dynamic-zone.form-next-to-section': DynamicZoneFormNextToSection;
       'dynamic-zone.hero': DynamicZoneHero;
+      'dynamic-zone.hero-image': DynamicZoneHeroImage;
+      'dynamic-zone.hover-effects': DynamicZoneHoverEffects;
       'dynamic-zone.how-it-works': DynamicZoneHowItWorks;
       'dynamic-zone.launches': DynamicZoneLaunches;
+      'dynamic-zone.marquee': DynamicZoneMarquee;
       'dynamic-zone.pricing': DynamicZonePricing;
       'dynamic-zone.related-articles': DynamicZoneRelatedArticles;
       'dynamic-zone.related-products': DynamicZoneRelatedProducts;
+      'dynamic-zone.stats': DynamicZoneStats;
       'dynamic-zone.testimonials': DynamicZoneTestimonials;
       'global.footer': GlobalFooter;
       'global.navbar': GlobalNavbar;
