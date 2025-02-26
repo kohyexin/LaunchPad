@@ -12,7 +12,7 @@ export const Testimonials = ({ heading, sub_heading, testimonials }: { heading: 
   return (
     <div className="relative">
       <AmbientColor />
-      <div className="pb-20">
+      <div className="pb-5">
         <FeatureIconContainer className="flex justify-center items-center overflow-hidden">
           <TbLocationBolt className="h-6 w-6 text-white" />
         </FeatureIconContainer>
@@ -23,12 +23,12 @@ export const Testimonials = ({ heading, sub_heading, testimonials }: { heading: 
       </div>
 
       {testimonials && (
-        <div className="relative md:py-20 pb-20">
-          <TestimonialsSlider testimonials={testimonials} />
+        //<div className="relative md:py-20 pb-20">
+        //  <TestimonialsSlider testimonials={testimonials} />
           <div className="h-full w-full mt-20 bg-charcoal ">
             <TestimonialsMarquee testimonials={testimonials} />
           </div>
-        </div>
+        //</div>
       )}
      
       <div className="absolute bottom-0 inset-x-0 h-40 w-full bg-gradient-to-t from-charcoal to-transparent"></div>

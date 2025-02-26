@@ -78,25 +78,28 @@ export function HeroSectionWithImagesGrid() {
 export const ImagesGrid = () => {
   const images = [
     {
-      src: "https://assets.aceternity.com/pro/hero-example-3.jpg",
-      className: "translate-y-10",
-    },
-    {
-      src: "https://assets.aceternity.com/pro/hero-example-1.jpg",
+      src: "http://localhost:1337/uploads/vcc_accounts_c7b85af10f.png",
       className: "translate-y-20",
     },
-
     {
-      src: "https://assets.aceternity.com/pro/hero-example-2.jpg",
+      src: "http://localhost:1337/uploads/vcc_cards_4390a3f4c4.png",
       className: "translate-y-4",
     },
     {
-      src: "https://assets.aceternity.com/pro/hero-example-4.jpg",
+      src: "http://localhost:1337/uploads/vcc_mobile_64486af62f.png",
       className: "translate-y-10",
     },
     {
-      src: "https://assets.aceternity.com/pro/hero-example-5.jpg",
-      className: "translate-y-20",
+      src: "http://localhost:1337/uploads/saved_cards_f975e624e0.png",
+      className: "translate-y-10",
+    },
+    {
+      src: "http://localhost:1337/uploads/saved_cards_f975e624e0.png",
+      className: "translate-y-10",
+    },
+    {
+      src: "http://localhost:1337/uploads/saved_cards_f975e624e0.png",
+      className: "translate-y-10",
     },
   ];
   return (

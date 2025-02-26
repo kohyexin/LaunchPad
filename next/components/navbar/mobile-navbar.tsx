@@ -5,7 +5,7 @@ import { useState } from "react";
 import { IoIosMenu } from "react-icons/io";
 import { IoIosClose } from "react-icons/io";
 import { Button } from "@/components/elements/button";
-import { Logo } from "@/components/logo";
+import { LogoNavbar } from "@/components/logo";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { LocaleSwitcher } from "../locale-switcher";
 
@@ -47,7 +47,7 @@ export const MobileNavbar = ({ leftNavbarItems, rightNavbarItems, logo, locale }
         " bg-neutral-900  shadow-[0px_-2px_0px_0px_var(--neutral-800),0px_2px_0px_0px_var(--neutral-800)]"
       )}
     >
-      <Logo image={logo?.image} />
+      <LogoNavbar image={logo?.image} />
 
       <IoIosMenu
         className="text-white h-6 w-6"
@@ -57,7 +57,7 @@ export const MobileNavbar = ({ leftNavbarItems, rightNavbarItems, logo, locale }
       {open && (
         <div className="fixed inset-0 bg-black z-50 flex flex-col items-start justify-start space-y-10  pt-5  text-xl text-zinc-600  transition duration-200 hover:text-zinc-800">
           <div className="flex items-center justify-between w-full px-5">
-            <Logo locale={locale} image={logo?.image} />
+            <LogoNavbar locale={locale} image={logo?.image} />
             <div className="flex items-center space-x-2">
               <LocaleSwitcher currentLocale={locale} />
               <IoIosClose

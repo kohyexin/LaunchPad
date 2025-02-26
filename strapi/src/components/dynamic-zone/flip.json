@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_dynamic_zone_flips",
+  "info": {
+    "displayName": "Flip",
+    "icon": "stack"
+  },
+  "options": {},
+  "attributes": {
+    "Flip": {
+      "type": "string"
+    }
+  }
+}

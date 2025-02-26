@@ -1,5 +1,5 @@
 import React from "react";
-import { Logo } from "@/components/logo";
+import { LogoFooter } from "@/components/logo";
 import { Link } from "next-view-transitions";
 
 export const Footer = async ({ data, locale }: { data: any, locale: string }) => {
@@ -10,7 +10,7 @@ export const Footer = async ({ data, locale }: { data: any, locale: string }) =>
           <div>
             <div className="mr-4  md:flex mb-4">
               {data?.logo?.image && (
-                <Logo image={data?.logo?.image} />
+                <LogoFooter image={data?.logo?.image} />
               )}
             </div>
             <div className="max-w-xs">{data?.description}</div>

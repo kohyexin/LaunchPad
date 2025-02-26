@@ -13,54 +13,61 @@ import {
 export function FeaturesSectionDemo() {
   const features = [
     {
-      title: "Built for developers",
+      title: "Designed for developers",
       description:
-        "Built for engineers, developers, dreamers, thinkers and doers.",
+        "Intuitive APIs that reduce integration time and effort.",
       icon: <IconTerminal2 />,
     },
     {
-      title: "Ease of use",
+      title: "Optimise Connectors",
       description:
-        "It's as easy as using an Apple, and as expensive as buying one.",
+        "Payment Orchestrations at its best.",
       icon: <IconEaseInOut />,
     },
     {
-      title: "Pricing like no other",
+      title: "Connectors Integration",
       description:
-        "Our prices are best in the market. No cap, no lock, no credit card required.",
-      icon: <IconCurrencyDollar />,
+        "Build world of payment methods for you.",
+      icon: <IconRouteAltLeft />,
     },
     {
       title: "100% Uptime guarantee",
-      description: "We just cannot be taken down by anyone.",
+      description: "Because Downtime Isn’t an Option",
       icon: <IconCloud />,
     },
     {
-      title: "Multi-tenant Architecture",
-      description: "You can simply share passwords instead of buying new seats",
-      icon: <IconRouteAltLeft />,
+      title: "Payment Optimisations",
+      description: "Our optimisation includes payment process, conversion rate, cost, fraud, and reconciliation",
+      icon: <IconCurrencyDollar />,
     },
     {
       title: "24/7 Customer Support",
       description:
-        "We are available a 100% of the time. Atleast our AI Agents are.",
+        "We are available a 100% of the time. At least our AI Agents are.",
       icon: <IconHelp />,
     },
     {
-      title: "Money back guarantee",
+      title: "Customised Branding",
       description:
-        "If you donot like EveryAI, we will convince you to like us.",
+        "Your Brand intact with us, go live as soon as 1-3 working days.",
       icon: <IconAdjustmentsBolt />,
     },
     {
-      title: "And everything else",
-      description: "I just ran out of copy ideas. Accept my sincere apologies",
+      title: "Risk Management",
+      description: "Beat fraud, grow your revenue with our flexible AI-assisted rules",
       icon: <IconHeart />,
     },
   ];
   return (
     <div id="hovereffect">
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  relative z-10 pt-0 pb-10 max-w-7xl mx-auto">
+      <h2 className="text-center text-xl font-bold text-neutral-700 dark:text-neutral-100 md:text-3xl">
+        Discover Our Key Features
+      </h2>
+      <p className="mx-auto mt-4 max-w-2xl text-center text-sm text-neutral-800 dark:text-neutral-200 md:text-base">
+        We built a payment system so you can focus on your business
+      </p>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  relative z-10 pt-5 pb-10 max-w-7xl mx-auto">
       {features.map((feature, index) => (
         <Feature key={feature.title} {...feature} index={index} />
       ))}

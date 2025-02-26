@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_dynamic_zone_playful_heroes",
+  "info": {
+    "displayName": "Playful_Hero",
+    "icon": "crown"
+  },
+  "options": {},
+  "attributes": {
+    "Text": {
+      "type": "string"
+    }
+  }
+}

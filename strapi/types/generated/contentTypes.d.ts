@@ -702,6 +702,10 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
         'dynamic-zone.stats',
         'dynamic-zone.marquee',
         'dynamic-zone.hero-image',
+        'dynamic-zone.side-faq',
+        'dynamic-zone.playful-hero',
+        'dynamic-zone.flip',
+        'dynamic-zone.expandable',
       ]
     > &
       Schema.Attribute.SetPluginOptions<{

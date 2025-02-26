@@ -13,9 +13,9 @@ import {
 export function FeaturesSectionDemo() {
   const features = [
     {
-      title: "Built for developers",
+      title: "Unified Payment Platform",
       description:
-        "Built for engineers, developers, dreamers, thinkers and doers.",
+        "Manage payment through a simple API. Rich platform products can help you operate your payment efficiently.",
       icon: <IconTerminal2 />,
     },
     {

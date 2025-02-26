@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_dynamic_zone_side_faqs",
+  "info": {
+    "displayName": "side_faq",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "string"
+    }
+  }
+}

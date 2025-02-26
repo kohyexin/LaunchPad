@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_dynamic_zone_expandables",
+  "info": {
+    "displayName": "expandable",
+    "icon": "command"
+  },
+  "options": {},
+  "attributes": {
+    "expandable": {
+      "type": "string"
+    }
+  }
+}

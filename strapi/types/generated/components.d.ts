@@ -89,6 +89,17 @@ export interface DynamicZoneCta extends Struct.ComponentSchema {
   };
 }
 
+export interface DynamicZoneExpandable extends Struct.ComponentSchema {
+  collectionName: 'components_dynamic_zone_expandables';
+  info: {
+    displayName: 'expandable';
+    icon: 'command';
+  };
+  attributes: {
+    expandable: Schema.Attribute.String;
+  };
+}
+
 export interface DynamicZoneFaq extends Struct.ComponentSchema {
   collectionName: 'components_dynamic_zone_faqs';
   info: {
@@ -119,6 +130,17 @@ export interface DynamicZoneFeatures extends Struct.ComponentSchema {
       false
     >;
     sub_heading: Schema.Attribute.String;
+  };
+}
+
+export interface DynamicZoneFlip extends Struct.ComponentSchema {
+  collectionName: 'components_dynamic_zone_flips';
+  info: {
+    displayName: 'Flip';
+    icon: 'stack';
+  };
+  attributes: {
+    Flip: Schema.Attribute.String;
   };
 }
 
@@ -223,6 +245,17 @@ export interface DynamicZoneMarquee extends Struct.ComponentSchema {
   };
 }
 
+export interface DynamicZonePlayfulHero extends Struct.ComponentSchema {
+  collectionName: 'components_dynamic_zone_playful_heroes';
+  info: {
+    displayName: 'Playful_Hero';
+    icon: 'crown';
+  };
+  attributes: {
+    Text: Schema.Attribute.String;
+  };
+}
+
 export interface DynamicZonePricing extends Struct.ComponentSchema {
   collectionName: 'components_dynamic_zone_pricings';
   info: {
@@ -261,6 +294,17 @@ export interface DynamicZoneRelatedProducts extends Struct.ComponentSchema {
     heading: Schema.Attribute.String;
     products: Schema.Attribute.Relation<'oneToMany', 'api::product.product'>;
     sub_heading: Schema.Attribute.String;
+  };
+}
+
+export interface DynamicZoneSideFaq extends Struct.ComponentSchema {
+  collectionName: 'components_dynamic_zone_side_faqs';
+  info: {
+    displayName: 'side_faq';
+    icon: 'bulletList';
+  };
+  attributes: {
+    question: Schema.Attribute.String;
   };
 }
 
@@ -567,8 +611,10 @@ declare module '@strapi/strapi' {
       'cards.social-media-card': CardsSocialMediaCard;
       'dynamic-zone.brands': DynamicZoneBrands;
       'dynamic-zone.cta': DynamicZoneCta;
+      'dynamic-zone.expandable': DynamicZoneExpandable;
       'dynamic-zone.faq': DynamicZoneFaq;
       'dynamic-zone.features': DynamicZoneFeatures;
+      'dynamic-zone.flip': DynamicZoneFlip;
       'dynamic-zone.form-next-to-section': DynamicZoneFormNextToSection;
       'dynamic-zone.hero': DynamicZoneHero;
       'dynamic-zone.hero-image': DynamicZoneHeroImage;
@@ -576,9 +622,11 @@ declare module '@strapi/strapi' {
       'dynamic-zone.how-it-works': DynamicZoneHowItWorks;
       'dynamic-zone.launches': DynamicZoneLaunches;
       'dynamic-zone.marquee': DynamicZoneMarquee;
+      'dynamic-zone.playful-hero': DynamicZonePlayfulHero;
       'dynamic-zone.pricing': DynamicZonePricing;
       'dynamic-zone.related-articles': DynamicZoneRelatedArticles;
       'dynamic-zone.related-products': DynamicZoneRelatedProducts;
+      'dynamic-zone.side-faq': DynamicZoneSideFaq;
       'dynamic-zone.stats': DynamicZoneStats;
       'dynamic-zone.testimonials': DynamicZoneTestimonials;
       'global.footer': GlobalFooter;

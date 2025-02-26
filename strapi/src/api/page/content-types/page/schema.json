@@ -57,7 +57,11 @@
         "dynamic-zone.hover-effects",
         "dynamic-zone.stats",
         "dynamic-zone.marquee",
-        "dynamic-zone.hero-image"
+        "dynamic-zone.hero-image",
+        "dynamic-zone.side-faq",
+        "dynamic-zone.playful-hero",
+        "dynamic-zone.flip",
+        "dynamic-zone.expandable"
       ]
     }
   }
